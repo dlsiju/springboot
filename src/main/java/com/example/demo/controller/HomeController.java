@@ -23,4 +23,10 @@ public class HomeController {
     // return "works fine";
     return homeService.add(first, second);
   }
+
+  @GetMapping("/mul/{first}/{second}")
+  public String mul(@PathVariable("first") String first, @PathVariable("second") String second) {
+    // return "works fine";
+    return homeService.mull(first, second);
+  }
 }
