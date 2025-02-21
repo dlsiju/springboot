@@ -10,15 +10,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/app")
 public class HomeController {
 
-    //@PathVariable("first") String num1, @PathVariable("second") String num2
-    public HomeService homeService = new HomeService();
-    @GetMapping("/home")
-    public String loadHome(){
-        return "loaded home";
-    }
-    @GetMapping("/add/{first}/{second}")
-    public String add(@PathVariable("first") String first,@PathVariable("second") String second){
-        //return "works fine";
-        return homeService.add(first,second);
-    }
+  // @PathVariable("first") String num1, @PathVariable("second") String num2
+  public HomeService homeService = new HomeService();
+
+  @GetMapping("/home")
+  public String loadHome() {
+    return "loaded home";
+  }
+
+  @GetMapping("/add/{first}/{second}")
+  public String add(@PathVariable("first") String first, @PathVariable("second") String second) {
+    // return "works fine";
+    return homeService.add(first, second);
+  }
 }
