@@ -12,6 +12,6 @@ public class HomeService {
 
   /**/
   public String mull(String first, String second) {
-    return String.valueOf(Integer.parseInt(first) + Integer.parseInt(second));
+    return String.valueOf(Integer.parseInt(first) * Integer.parseInt(second));
   }
 }
