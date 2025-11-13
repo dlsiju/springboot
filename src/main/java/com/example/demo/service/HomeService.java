@@ -38,6 +38,5 @@ public class HomeService {
      };
     cust.display(6);
     cust.test();
-    cust.sum();
   }
 }
