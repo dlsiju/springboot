@@ -29,4 +29,9 @@ public class HomeController {
     // return "works fine";
     return homeService.mull(first, second);
   }
+
+  @GetMapping("/custom/{fnum}/{snum}")
+  public void runCustom(@PathVariable("fnum") int a,@PathVariable("snum") int b){
+    homeService.executeCustom(a,b);
+  }
 }
