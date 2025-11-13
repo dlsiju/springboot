@@ -20,7 +20,7 @@ public class HomeService {
      Custom cust=new Custom() {
        @Override
        public void test() {
-         System.out.println("Test method");
+         System.out.println("Test methodd");
 
        }
 
