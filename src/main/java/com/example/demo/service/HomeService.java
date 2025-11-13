@@ -1,7 +1,6 @@
 package com.example.demo.service;
 
 import com.example.demo.abs.Custom;
-import com.example.demo.controller.HomeController;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,7 +15,7 @@ public class HomeService {
     return String.valueOf(Integer.parseInt(first) * Integer.parseInt(second));
   }
 
-  public void executeCustom() {
+  public void executeCustom(int a, int b) {
     System.out.println("execute Custom");
      Custom cust=new Custom() {
        @Override
